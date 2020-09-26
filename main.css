@@ -74,8 +74,9 @@ div.hero h2 {
 .float-right{
     float:right;
     margin-left:20px;
-    width: 41%;
-    height: 41%;
+    width: 35%;
+    height: 35%;
+    padding: 40px;
 }
 
 
