@@ -4,8 +4,9 @@ const port = 3000;
 
 
 app.use('/', express.static('public'));
+const budget = require("./categories"); 
 
-const budget = {
+/* const budget = {
     myBudget: [
     {
 
@@ -23,16 +24,19 @@ const budget = {
         budget: 90
     }
     ]
-};
-
+}; */
 
 //routes
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
+
+//request to "/budget"
 app.get('/budget', (req, res) => {
     res.json(budget);
+    
+
 });
 
 
