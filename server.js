@@ -1,8 +1,14 @@
+//Budget API
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
 const port = 3000;
 
+//week 5
+app.use(cors());
 
+//week 4
 app.use('/', express.static('public'));
 const budget = require("./categories"); 
 
@@ -26,10 +32,10 @@ const budget = require("./categories");
     ]
 }; */
 
-//routes
+/* //routes
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
-});
+}); */
 
 
 //request to "/budget"
@@ -41,6 +47,6 @@ app.get('/budget', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log (`Example app listening at http://localhost:${port}`);
+    console.log (`API Served at http://localhost:${port}`);
 });
 
