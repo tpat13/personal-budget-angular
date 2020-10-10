@@ -22,6 +22,8 @@ const routes: Routes = [
   component: LoginComponent
 },
 {
+//  Contact Route (Coding Exercise 02)
+
   path: 'contact',
   component: ContactComponent
 },
